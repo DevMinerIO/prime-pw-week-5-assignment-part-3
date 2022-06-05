@@ -36,4 +36,28 @@ function showCollection(array) {
 }
 showCollection(collection);
 
+function findByArtist(artist) {
+    let matchingArtist = [];
+    for(let i = 0; i < collection.length; i++) {
+        if(collection[i].artist.toLowerCase() === artist.toLowerCase()) {
+            matchingArtist.push(collection[i]);
+        }
+    }
+    if(matchingArtist.length === 0) {
+        console.log("There are no matching results for:", artist , "as seen below!");
+        console.log(matchingArtist);
+    } else {
+        console.log("Here are your matching results for:" , artist + "!");
+        console.log(matchingArtist);
+    }
+}
+
+//testing matching artist function
+addToCollection("MATCHING TITLE TEST", "MINER", 2022);
+//matching none
+findByArtist("find None");
+//multiple matching
+findByArtist("miner");
+//matches single
+findByArtist("INSYNC");
 
