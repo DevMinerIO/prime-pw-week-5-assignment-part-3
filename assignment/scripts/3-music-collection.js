@@ -17,12 +17,14 @@ function addToCollection(addTitle, addArtist, addYearPublished) {
         yearPublished: addYearPublished
     };
     collection.push(album);
+    return console.log(collection);
 }
 addToCollection("test", "MINER", 1991);
-console.log(collection);
 addToCollection("test2", "MEEEEEE", 1000);
 addToCollection("Three", "YOUUUUU", 2090);
 addToCollection("Everybody", "Back Street Boys", 2000);
 addToCollection("Bye Bye Bye", "InSync", 2002);
 addToCollection("Oops I did it again", "Britney Spears", 1999);
-console.log(collection);
+
+
+
