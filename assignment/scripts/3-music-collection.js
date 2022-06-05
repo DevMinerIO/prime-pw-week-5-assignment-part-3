@@ -26,5 +26,14 @@ addToCollection("Everybody", "Back Street Boys", 2000);
 addToCollection("Bye Bye Bye", "InSync", 2002);
 addToCollection("Oops I did it again", "Britney Spears", 1999);
 
+//Am I able to see the .title, .artist, and .yearPublished because they are in the array im looking at? They were made as...
+//local variables in my "addToCollection" function.
+function showCollection(array) {
+    console.log("Number of items in the array:" , array.length);
+    for( let i = 0; i < array.length; i++) {
+        console.log(array[i].title, "by" , array[i].artist + ", published in" , array[i].yearPublished);
+    }
+}
+showCollection(collection);
 
 
